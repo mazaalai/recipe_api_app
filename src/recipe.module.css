@@ -1,0 +1,29 @@
+.recipe{
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgb(71,71,71);
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: white;
+    align-items: center;
+    min-width: 40%;
+}
+
+.image{
+    border-radius: 50%;
+    width: 30%;
+    height: 30%;
+}
+ol {
+    list-style-type: none;
+}
+button{
+    background: coral;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+}
+button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
