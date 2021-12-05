@@ -1,9 +1,19 @@
 .App {
   text-align: center;
-  background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+  background-image: url("https://images.unsplash.com/photo-1563865436874-9aef32095fad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
 }
-
+h1{
+  color: white;
+  padding-top: 50px;
+  margin: 0px;
+  text-shadow: 2px 2px black;
+}
 .search-form{
+  padding-top: 25px;
   min-height: 10vh;
   display: flex;
   justify-content: center;
@@ -25,4 +35,5 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  text-shadow: 1px 1px black;
 }
