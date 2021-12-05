@@ -15,8 +15,13 @@ export function AllRecipesProvider(){
     const [searchHistory, setSearchHistory] = useState([]);
 
     useEffect(() => {
+        getRecipes();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [query]);
+
+    useEffect(() => {
         const data = localStorage.getItem('my-history')
-        if(data){
+        if(data != null){
             setSearchHistory(JSON.parse(data))
         }else{
             setSearchHistory('geen');
@@ -29,10 +34,7 @@ export function AllRecipesProvider(){
         localStorage.setItem("my-history", JSON.stringify(query));
     });
 
-    useEffect(() => {
-        getRecipes();
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [query]);
+
 
 
     const getRecipes = async () => {
