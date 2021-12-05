@@ -16,6 +16,11 @@
     width: 30%;
     height: 30%;
 }
+.heart{
+    position:absolute;
+    top:0;
+    right: 5%;
+}
 ol {
     list-style-type: none;
 }
