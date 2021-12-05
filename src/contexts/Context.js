@@ -61,7 +61,7 @@ export function AllRecipesProvider(){
                     Search
                 </button>
             </form>
-            <p>*Laatst gezocht recept. {searchHistory}</p>
+            <p>*Laatst gezocht recept: {searchHistory}</p>
             <RecipeList recipes={recipes}/>
 
         </div>
